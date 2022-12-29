@@ -75,14 +75,25 @@ WSGI_APPLICATION = 'Eshop.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.1/ref/settings/#databases
 
+#DATABASES = {
+#    'default': {
+#        'ENGINE': 'django.db.backends.sqlite3',
+#        'NAME': BASE_DIR / 'db.sqlite3',
+#    }
+#}
+#
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'bdpost',
+        'USER': 'admin',
+        'PASSWORD': 'gXndp6wYWogbMBAfj1Hk2DPhMbs5VsaB',
+        'HOST': 'dpg-ceigvtkgqg4dlfbh1ip0-a.oregon-postgres.render.com',
+        'PORT': '5432',
     }
 }
 
-
+#
 # Password validation
 # https://docs.djangoproject.com/en/3.1/ref/settings/#auth-password-validators
 
@@ -106,6 +117,7 @@ AUTH_PASSWORD_VALIDATORS = [
 # https://docs.djangoproject.com/en/3.1/topics/i18n/
 
 LANGUAGE_CODE = 'en-us'
+#LANGUAGE_CODE = 'es-ue'
 
 TIME_ZONE = 'UTC'
 
